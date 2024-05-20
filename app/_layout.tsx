@@ -34,24 +34,12 @@ const RootLayout = () => {
     <>
       <Stack>
         <Stack.Screen name='index' options={{ headerShown: false }} />
-        <Stack.Screen name='test' options={{ headerShown: true }} />
+        <Stack.Screen name='(auth)' options={{ headerShown: false }} />
+        <Stack.Screen name='(tabs)' options={{ headerShown: false }} />
+        {/* <Stack.Screen name='/search/[query]' options={{ headerShown: false }} /> */}
       </Stack>
     </>
   )
-
-  return (
-    <>
-      <Text>Header</Text>
-      <Slot />
-      <Text>Footer</Text>
-    </>
-  )
-
-  // return (
-  //   <View style={styles.container}>
-  //     <Text>sdf</Text>
-  //   </View>
-  // );
 }
 
 export default RootLayout

@@ -2,8 +2,8 @@ import { Text, TouchableOpacity } from "react-native"
 
 type Test = {
     title: string;
-    handlePress: any;
-    containerStyles: any;
+    handlePress?: () => void;
+    containerStyles?: any;
     textStyles?: any;
     isLoading?: boolean;
 }
